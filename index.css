@@ -1,0 +1,156 @@
+:root{
+    --main-font:font-family: 'Playfair Display SC', serif;
+--main-color:#5e5e5e;
+--link-color: #03a9f3;
+--second-text-color: #c7c1b6;
+}
+
+html{
+    box-sizing: border-box;
+    
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--main-font);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* header */
+
+.header{
+    margin-bottom: 100px;
+}
+
+
+.site-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.site-nav__link{
+    display: block;
+    padding: 20px 60px;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: var(--main-color);
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus{
+    color: var(--link-color);
+}
+
+
+/* main */
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-bottom: 90px;
+}
+
+.features__item{
+    flex-basis: calc(50% - 60px);
+    margin-right: 60px;
+    margin-bottom: 130px;
+
+}
+
+.features__item:nth-child(2n){
+    margin-right: 0;
+}
+
+.features__item:nth-last-child(-n+2){
+    margin-bottom: 0;
+}
+
+.text{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    color: var(--second-text-color);
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 30px;
+
+    color: var(--main-color);
+}
+
+.title::first-letter{
+    text-transform: capitalize;
+}
+
+.description{
+    font-size: 14px;
+
+    color: var(--main-color);
+
+}
+
+.main__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 165px;
+    height: 60px;
+
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--main-color);
+
+    border: 1px solid var(--main-color);
+
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
